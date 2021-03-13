@@ -5,9 +5,10 @@ authors = ["Laurent Bernabe <laurent.bernabe@gmail.com>"]
 edition = "2018"
 description = "Load your chess exercises from PGN files, and train yourself against the device."
 license-file = "LICENSE.txt"
-readme = "README.md"
-# TODO: Add homepage
-# TODO: Add repository
+readme = "README_DEB.txt"
+repository = "https://github.com/loloof64/ChessExercisesOrganizerRustFltk"
+# TODO: Add homepage (with a SheperdJS guide)
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -23,3 +24,6 @@ buildflags = ["--release"]
 
 [package.metadata.rpm.targets]
 chess-exercises-organizer = { path = "/usr/bin/chess-exercises-organizer" }
+
+[package.metadata.deb]
+extended-description-file = "ExtendedDescription.txt"

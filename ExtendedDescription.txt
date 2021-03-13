@@ -1,0 +1,15 @@
+Chess exercises organizer
+
+Load your chess exercises from PGN files, and train yourself against the device.
+
+First, at least in the first launch, you have to select the path to the chess UCI engine (such as Stockfish),
+on your computer. This engine will be responsible for making the best computer moves.
+
+Then, when requesting a game start :
+1. Either you select the PGN file which has the exercises : 
+for each game you give the startup position with a FEN tag 
+(e.g: [FEN "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2"]).
+Or you define the startup position with the editor.
+2. Then you select your player type for both sides (Human/Computer), as well as the timing or game without time limit.
+3. You play and can stop the game even if it is not finished by the rules.
+4. You can review the game in the notation view.
