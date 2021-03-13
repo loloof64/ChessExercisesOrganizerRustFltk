@@ -5,6 +5,9 @@ authors = ["Laurent Bernabe <laurent.bernabe@gmail.com>"]
 edition = "2018"
 description = "Load your chess exercises from PGN files, and train yourself against the device."
 license-file = "LICENSE.txt"
+readme = "README.md"
+# TODO: Add homepage
+# TODO: Add repository
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
