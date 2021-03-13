@@ -1,10 +1,22 @@
 [package]
-name = "chess-exercises-organizer-rust-fltk"
+name = "chess-exercises-organizer"
 version = "0.1.0"
 authors = ["Laurent Bernabe <laurent.bernabe@gmail.com>"]
 edition = "2018"
+description = "Load your chess exercises from PGN files, and train yourself against the device."
+license-file = "LICENSE.txt"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-fltk = {version="0.15.9", features=["use-ninja", "fltk-bundled"]}
+[dependencies.fltk]
+version="^0.15"
+features=["use-ninja"]
+
+[package.metadata.rpm]
+package = "chess-exercises-organizer"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+chess-exercises-organizer = { path = "/usr/bin/chess-exercises-organizer" }

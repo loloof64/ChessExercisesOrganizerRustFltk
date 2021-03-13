@@ -13,7 +13,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3c69b077ad434294d3ce9f1f6143a2a4b89a8a2d54ef813d85003a4fd1137fd"
 
 [[package]]
-name = "chess-exercises-organizer-rust-fltk"
+name = "chess-exercises-organizer"
 version = "0.1.0"
 dependencies = [
  "fltk",
